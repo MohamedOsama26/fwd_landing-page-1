@@ -26,7 +26,7 @@ for(let section of sections){
 
 // Add class 'active' to section when near top of viewport
 document.addEventListener('scroll',()=>{
-    let mini = Math.min(Math.abs(sections[0].getBoundingClientRect().top),Math.abs(sections[1].getBoundingClientRect().top),Math.abs(sections[2].getBoundingClientRect().top));
+    let mini = Math.min(Math.abs(sections[0].getBoundingClientRect().top),Math.abs(sections[1].getBoundingClientRect().top),Math.abs(sections[2].getBoundingClientRect().top),Math.abs(sections[3].getBoundingClientRect().top));
     sections.forEach(sec=>{
         sec.getBoundingClientRect().top==mini?sec.classList.add('your-active-class'):sec.classList.remove('your-active-class');
     });    
